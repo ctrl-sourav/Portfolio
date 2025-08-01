@@ -72,7 +72,11 @@ const About = () => {
               className="mt-8"
               variants={itemVariants}
             >
-               
+            <a 
+              href="https://drive.google.com/file/d/1lJZVqkiuF92el1PTe77Rkk2l0_GObSYo/view?usp=drive_link" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
    
               <Button 
                 size="lg"
