@@ -45,8 +45,8 @@ const Projects = () => {
       description: 'A modern portfolio website built with Next.js, featuring dark mode, animations, and responsive design.',
       image: projectEcommerce,
       tech: ['React', 'Framer Motion', 'Tailwind CSS', 'TypeScript','API'],
-      github: 'https://github.com',
-      demo: 'https://demo.com',
+      github: 'https://github.com/ctrl-sourav/Portfolio',
+      demo: 'https://portfolio-soumyasourav-kuanr.vercel.app/',
       featured: false,
     },
   ];
