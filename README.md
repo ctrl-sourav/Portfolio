@@ -164,4 +164,4 @@ The project can be deployed to any static hosting service that supports React ap
 
 ---
 
-Made with by Soumya Sourav Kuanr
+Made by Soumya Sourav Kuanr
