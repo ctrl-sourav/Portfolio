@@ -152,20 +152,16 @@ The portfolio is fully responsive and optimized for:
 ### Other Platforms
 The project can be deployed to any static hosting service that supports React applications.
 
-## 📄 License
 
-This project is open source and available under the [MIT License](LICENSE).
 
-## 🤝 Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📞 Contact
 
 - **GitHub**: [@ctrl-sourav](https://github.com/ctrl-sourav)
 - **LinkedIn**: [Soumya Sourav Kuanr](https://www.linkedin.com/in/soumya-sourav-kuanr)
-- **Email**: [Your Email]
+- **Email**: [soumyasourav03@gmail.com]
 
 ---
 
-Made with ❤️ by Soumya Sourav Kuanr
+Made with by Soumya Sourav Kuanr
