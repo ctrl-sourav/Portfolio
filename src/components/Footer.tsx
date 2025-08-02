@@ -65,7 +65,7 @@ const Footer = () => {
             
             </p>
             <p>
-              Built with React, TypeScript, Framer Motion and lot's of Coffee☕ !
+              Built with React, TypeScript, Framer Motion and lot's of Coffee ☕ !
             </p>
           </div>
         </div>
