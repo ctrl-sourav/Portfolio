@@ -21,7 +21,7 @@ const Navigation = () => {
     { name: 'Skills', href: '#skills' },
     { name: 'Projects', href: '#projects' },
     { name: 'Experience', href: '#experience' },
-    { name: 'Contact', href: '#contact' },
+    
   ];
 
   const scrollToSection = (href: string) => {
@@ -81,7 +81,8 @@ const Navigation = () => {
               variant="ghost"
               size="sm"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="text-foreground"
+              className="text-foreground p-2 hover:bg-primary/10 transition-colors"
+              aria-label="Toggle mobile menu"
             >
               {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
@@ -89,35 +90,35 @@ const Navigation = () => {
         </div>
 
         {/* Mobile Navigation */}
-        <motion.div
-          className={`md:hidden mt-4 ${isMobileMenuOpen ? 'block' : 'hidden'}`}
-          initial={{ opacity: 0, height: 0 }}
-          animate={{ 
-            opacity: isMobileMenuOpen ? 1 : 0, 
-            height: isMobileMenuOpen ? 'auto' : 0 
-          }}
-          transition={{ duration: 0.3 }}
-        >
-          <div className="glass-card p-4 space-y-4">
-            {navItems.map((item) => (
-              <button
-                key={item.name}
-                onClick={() => scrollToSection(item.href)}
-                className="block w-full text-left text-muted-foreground hover:text-primary transition-colors py-2"
+        {isMobileMenuOpen && (
+          <motion.div
+            className="md:hidden mt-4"
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: 'auto' }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.3 }}
+          >
+            <div className="glass-card p-4 space-y-4">
+              {navItems.map((item) => (
+                <button
+                  key={item.name}
+                  onClick={() => scrollToSection(item.href)}
+                  className="block w-full text-left text-muted-foreground hover:text-primary transition-colors py-2"
+                >
+                  {item.name}
+                </button>
+              ))}
+              
+              <Button 
+                size="sm"
+                className="w-full gradient-primary text-primary-foreground"
+                onClick={() => scrollToSection('#contact')}
               >
-                {item.name}
-              </button>
-            ))}
-            
-            <Button 
-              size="sm"
-              className="w-full gradient-primary text-primary-foreground"
-              onClick={() => scrollToSection('#contact')}
-            >
-              Let's Talk
-            </Button>
-          </div>
-        </motion.div>
+                Let's Talk
+              </Button>
+            </div>
+          </motion.div>
+        )}
       </div>
     </motion.nav>
   );
