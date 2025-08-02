@@ -53,8 +53,8 @@ const About = () => {
             
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>
-                Hello! I'm Soumya, a passionate full-stack developer with a love for creating 
-                digital experiences that are not only functional but also beautiful and intuitive.
+                Hello! I'm Soumya, a passionate full-stack developer with a love for creating beautiful and intuitive
+                digital experiences.
               </p>
               
               <p>
@@ -77,10 +77,16 @@ const About = () => {
               <Button 
                 size="lg"
                 className="gradient-accent text-accent-foreground hover:scale-105 transition-transform"
-                
+                asChild
               >
-                <Download className="mr-2 h-5 w-5" />
-                My Resume
+                <a 
+                  href="https://drive.google.com/file/d/1lJZVqkiuF92el1PTe77Rkk2l0_GObSYo/view?usp=drive_link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Download className="mr-2 h-5 w-5" />
+                  My Resume
+                </a>
               </Button>
             </motion.div>
           </motion.div>
