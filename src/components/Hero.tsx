@@ -55,7 +55,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
           >
-            Soumya sourav Kuanr
+            Soumya Sourav Kuanr
           </motion.h1>
           
           <motion.h2
@@ -109,7 +109,7 @@ const Hero = () => {
 
       {/* Scroll indicator */}
       <motion.div
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+        className="absolute bottom-20 left-1/2 transform -translate-x-1/2"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5 }}
@@ -119,6 +119,8 @@ const Hero = () => {
           transition={{ duration: 2, repeat: Infinity }}
           className="cursor-pointer"
           onClick={() => scrollToSection('about')}
+          whileTap={{ scale: 0.8, y: 5 }}
+          whileHover={{ scale: 1.1 }}
         >
           <ChevronDown className="h-8 w-8 text-primary" />
         </motion.div>
