@@ -27,45 +27,38 @@ const Experience = () => {
 
   const education = [
     {
-      title: ' B.Tech, CSE',
+      title: 'B.Tech, CSE',
       company: 'GITA',
       location: 'Bhubaneswar, Odisha, India',
       period: '2022 - 2026',
       description: [
         'Graduated in CSE with 8.9 CGPA',
         'Specialized in Software Engineering and Web Development',
-        
       ],
       type: 'education'
     },
 
     {
-      title: ' XII, CBSE',
+      title: 'XII, CBSE',
       company: 'SBD International School',
       location: 'Bhadrak, Odisha, India',
       period: '2022',
       description: [
-        ' Percentage: 75.6%',
-        
-        
+        'Percentage: 75.6%',
       ],
       type: 'education'
     },
 
     {
-      title: ' X, CBSE',
+      title: 'X, CBSE',
       company: 'SBD International School',
       location: 'Bhadrak, Odisha, India',
-      period: '202',
+      period: '2020',
       description: [
-        ' Percentage: 91.2%',
-        
-        
+        'Percentage: 91.2%',
       ],
       type: 'education'
     }
-
-    
   ];
 
   const containerVariants = {
@@ -133,8 +126,8 @@ const Experience = () => {
         <ul className="space-y-2">
           {item.description.map((desc: string, i: number) => (
             <li key={i} className="text-muted-foreground flex items-start">
-              <span className="text-primary mr-2 mt-2">•</span>
-              {desc}
+              <span className="text-primary mr-2 mt-0.5">•</span>
+              <span className="leading-relaxed">{desc}</span>
             </li>
           ))}
         </ul>
