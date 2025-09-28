@@ -104,7 +104,7 @@ const About = () => {
             >
               <div className="absolute inset-0 gradient-primary rounded-full blur-xl opacity-30" />
               <img
-                src="/profile-photo.jpg"
+                src="/PP.jpg"
                 alt="Soumya Sourav Kuanr"
                 className="relative w-full h-full object-cover rounded-full border-4 border-primary/30 shadow-2xl"
               />
